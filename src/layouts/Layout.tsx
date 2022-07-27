@@ -7,7 +7,7 @@ const Layout = ({
   children,
   collapsedNavBar = true,
 }: {
-  children?: ReactElement[];
+  children?: ReactElement | ReactElement[];
   collapsedNavBar?: Boolean;
 }) => {
   return (
