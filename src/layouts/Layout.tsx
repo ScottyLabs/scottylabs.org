@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Layout = ({
-  page,
+  children,
   collapsedNavBar = true,
 }: {
-  page?: ReactElement;
+  children?: ReactElement[];
   collapsedNavBar?: Boolean;
 }) => {
   return (
@@ -18,7 +18,7 @@ const Layout = ({
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar collapsed={collapsedNavBar} />
-      {page}
+      {children}
       <Footer />
     </div>
   );
