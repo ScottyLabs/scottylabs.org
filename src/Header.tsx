@@ -1,4 +1,4 @@
-import css from "./header.module.css";
+import css from "./Header.module.css";
 import clsx from "clsx";
 
 import scottylabsLogo from "./assets/scottylabs-logo.svg";
