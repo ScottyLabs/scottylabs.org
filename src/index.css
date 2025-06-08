@@ -1,0 +1,74 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* stolen from tailwind tokens */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  --black-50: hsl(0, 0%, 97%);
+  --black-100: hsl(0, 0%, 93%);
+  --black-200: hsl(0, 0%, 89%);
+  --black-300: hsl(0, 0%, 70%);
+  --black-500: hsl(0, 0%, 35%);
+  --black-900: hsl(0, 0%, 0%);
+
+  --border-radius-base: 10px;
+  --border-radius-lg: 40px;
+
+  /* to indicate unstyled text (no text should be red) */
+  color: red;
+  /* this font weight is fine as the default though */
+  font-weight: 500;
+}
+body {
+  font-family: Satoshi, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-size: var(--text-5xl);
+}
+h2 {
+  font-size: var(--text-3xl);
+}
+h3 {
+  font-size: var(--text-xl);
+}
+p {
+  font-size: var(--text-base);
+}
+small {
+  font-size: var(--text-xs);
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* global layout utility */
+main {
+  --padding: 20px;
+  --max-container-width: 1200px;
+  display: grid;
+  gap: var(--padding);
+  grid-template-columns:
+    1fr min(calc(100% - 2 * var(--padding)), var(--max-container-width))
+    1fr;
+  overflow: hidden;
+}
+main > .full-spread {
+  grid-column: 1 / -1;
+}
+main section {
+  grid-column: 2;
+  width: 100%;
+}

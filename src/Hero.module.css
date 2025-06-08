@@ -1,0 +1,32 @@
+.hero-section {
+  padding: 20svh 0 200px;
+  position: relative;
+}
+.hero-background {
+  position: absolute;
+  left: 50%;
+  bottom: -110px;
+  z-index: -1;
+}
+.title {
+  font-weight: 700;
+  font-size: var(--text-6xl);
+  color: var(--black-900);
+}
+.subtitle {
+  font-weight: 700;
+  font-size: var(--text-3xl);
+  color: var(--black-900);
+  margin-top: 10px;
+}
+.marketing-text {
+  margin-top: 10px;
+  font-size: var(--text-xl);
+  color: var(--black-500);
+  width: 70%;
+}
+.action-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}

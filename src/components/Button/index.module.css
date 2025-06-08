@@ -1,0 +1,15 @@
+.button {
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-size: var(--text-xl);
+  padding: 12px 33px;
+  border-radius: var(--border-radius-lg);
+}
+.primary {
+  background-color: var(--black-900);
+  color: var(--black-50);
+}
+.outlined {
+  border-color: var(--black-900);
+  color: var(--black-900);
+}
