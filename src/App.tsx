@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Hero from "./Hero";
+import ImageCarousel from "./ImageCarousel";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <ImageCarousel />
       </main>
     </>
   );

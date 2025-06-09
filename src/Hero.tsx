@@ -42,6 +42,19 @@ function Hero() {
           </div>
         </div>
       </div>
+      <div className={css["events-container"]}>
+        <div className="centered-section">
+          <div className={css["events"]}>
+            {[
+              "Read about demo day",
+              "Register for TartanHacks",
+              "Check out CMUCal",
+            ].map((txt) => (
+              <button className={css["events__button"]}>{txt}</button>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

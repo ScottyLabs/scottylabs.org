@@ -1,5 +1,6 @@
 .hero-container {
   overflow: hidden;
+  position: relative;
 }
 .hero-section {
   padding: 10% 0 250px;
@@ -8,7 +9,7 @@
 .hero-background {
   position: absolute;
   left: 50%;
-  bottom: -94px;
+  bottom: -104px;
   z-index: -1;
   height: 850px;
   width: auto;
@@ -96,4 +97,28 @@
   margin-top: 40px;
   display: flex;
   gap: 20px;
+}
+
+.events-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  border: 1px solid var(--black-300);
+  border-left: none;
+  border-right: none;
+}
+.events {
+  display: flex;
+  gap: 25px;
+}
+.events__button {
+  padding: 10px 25px;
+  color: var(--black-900);
+  font-size: var(--text-base);
+  border: 1px solid var(--black-300, #b3b3b3);
+  border-radius: var(--border-radius-base);
 }
