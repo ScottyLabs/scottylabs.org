@@ -1,0 +1,11 @@
+.carousel {
+  height: 300px;
+  margin-top: 35px;
+  display: flex;
+  gap: 25px;
+  overflow-x: scroll;
+  align-items: stretch;
+}
+.carousel__image {
+  border-radius: var(--border-radius-base);
+}
