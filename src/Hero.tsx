@@ -7,7 +7,6 @@ function Hero() {
     <section className={css["hero-container"]}>
       <div className="centered-section">
         <div className={css["hero-section"]}>
-          <img className={css["hero-background"]} src={heroBg} />
           <div className={css["title-container"]}>
             <span className={css["title"]}>
               ScottyLabs
@@ -25,6 +24,8 @@ function Hero() {
                 </div>
               </div>
             </span>
+            <link rel="preload" href={heroBg} />
+            <img className={css["hero-background"]} src={heroBg} />
           </div>
           <div className={css["subtitle"]}>
             The best place to build software @ CMU
