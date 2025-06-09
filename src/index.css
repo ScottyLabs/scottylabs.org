@@ -34,6 +34,8 @@
   color: red;
   /* this font weight is fine as the default though */
   font-weight: 500;
+
+  font-display: block;
 }
 body {
   font-family: Satoshi, system-ui, Avenir, Helvetica, Arial, sans-serif;
