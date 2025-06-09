@@ -1,0 +1,131 @@
+.title-section {
+  text-align: center;
+  margin-top: 150px;
+}
+.title-section__header {
+  color: var(--black-900);
+}
+.title-section__desc {
+  color: var(--black-500);
+  line-height: 1.5;
+  margin-top: 20px;
+}
+.design-text-container {
+  position: relative;
+}
+.decoration {
+  position: absolute;
+  /* background-color: blue; */
+  inset: 0 -5px -7px;
+  z-index: -1;
+  --border-color: #24a4ff;
+}
+.decoration__line {
+  background-color: var(--border-color);
+  position: absolute;
+  &:nth-child(1) {
+    inset: 0 auto 0 0;
+    width: 2px;
+  }
+  &:nth-child(2) {
+    inset: 0 0 0 auto;
+    width: 2px;
+  }
+  &:nth-child(3) {
+    inset: 0 0 auto 0;
+    height: 2px;
+  }
+  &:nth-child(4) {
+    inset: auto 0 0 0;
+    height: 2px;
+  }
+}
+.decoration__square {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-color);
+  &:nth-child(5) {
+    top: -4px;
+    left: -4px;
+  }
+  &:nth-child(6) {
+    top: -4px;
+    right: -4px;
+  }
+  &:nth-child(7) {
+    bottom: -4px;
+    left: -4px;
+  }
+  &:nth-child(8) {
+    bottom: -4px;
+    right: -4px;
+  }
+}
+.title-section__header__code-block {
+  color: var(--black-300);
+  font-weight: 400;
+  font-family: JetBrainsMono;
+}
+.project-tabs {
+  margin: 70px auto 0;
+  display: flex;
+  gap: 50px;
+  width: fit-content;
+}
+.tab {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  align-items: center;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--black-900);
+  padding: 13px 30px;
+  border-radius: var(--border-radius-lg);
+
+  &[aria-selected="true"] {
+    background-color: var(--black-50);
+    border: 1px solid var(--black-200, #e3e3e3);
+    &::after {
+      content: '[aria-selected="true"]';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      transform: translate(0, calc(-100% - 10px));
+      font-size: var(--text-xs);
+      font-family: JetBrainsMono;
+      color: var(--black-300);
+    }
+  }
+}
+.tab__image {
+  height: 1.4em;
+}
+
+.panel {
+  border-radius: var(--border-radius-base);
+  border: 1px solid var(--black-300);
+  padding: 40px 55px 0;
+  position: relative;
+  margin-top: 55px;
+}
+
+.panel__img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.panel__footer {
+  background-color: #000000e5;
+  position: absolute;
+  inset: auto 0 0;
+  padding: 30px 60px;
+  color: var(--black-50);
+  font-size: var(--text-xl);
+  line-height: 1.5;
+}

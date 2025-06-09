@@ -44,7 +44,7 @@ function Header() {
       </div>
       <nav className={css["main-nav"]}>
         {navLinks.map(({ icon, url, text }) => (
-          <a aria-current={url === "/about"}>
+          <a aria-current={url === "/about"} key={url}>
             <button
               className={clsx(
                 css["nav-button"],

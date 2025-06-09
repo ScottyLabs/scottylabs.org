@@ -24,8 +24,6 @@ function Hero() {
                 </div>
               </div>
             </span>
-            <link rel="preload" href={heroBg} />
-            <img className={css["hero-background"]} src={heroBg} />
           </div>
           <div className={css["subtitle"]}>
             The best place to build software @ CMU
@@ -40,6 +38,9 @@ function Hero() {
             <Button label="View Products" variant="primary" />
             <Button label="Join Us" variant="outlined" />
           </div>
+
+          <link rel="preload" href={heroBg} as="image" />
+          <img className={css["hero-background"]} src={heroBg} />
         </div>
       </div>
       <div className={css["events-container"]}>
@@ -50,7 +51,9 @@ function Hero() {
               "Register for TartanHacks",
               "Check out CMUCal",
             ].map((txt) => (
-              <button className={css["events__button"]}>{txt}</button>
+              <button className={css["events__button"]} key={txt}>
+                {txt}
+              </button>
             ))}
           </div>
         </div>

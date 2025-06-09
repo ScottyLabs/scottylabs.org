@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Hero from "./Hero";
 import ImageCarousel from "./ImageCarousel";
+import Projects from "./Projects";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Hero />
         <ImageCarousel />
+        <Projects />
       </main>
     </>
   );

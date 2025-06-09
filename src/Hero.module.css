@@ -30,31 +30,24 @@
 .decoration__line {
   position: absolute;
   background-color: var(--black-200);
+  &:nth-child(1) {
+    inset: -200px 0 -100px auto;
+    width: 1px;
+  }
+  &:nth-child(2) {
+    inset: -200px auto -200px 0;
+    width: 1px;
+  }
+  &:nth-child(3) {
+    inset: auto -300px 0 -200px;
+    height: 1px;
+  }
+  &:nth-child(4) {
+    inset: 0 -300px auto -200px;
+    height: 1px;
+  }
 }
-.decoration__line:nth-child(1) {
-  right: 0px;
-  top: -200px;
-  width: 1px;
-  height: 400px;
-}
-.decoration__line:nth-child(2) {
-  left: 0px;
-  top: -200px;
-  width: 1px;
-  height: 400px;
-}
-.decoration__line:nth-child(3) {
-  bottom: 0px;
-  left: -200px;
-  width: 800px;
-  height: 1px;
-}
-.decoration__line:nth-child(4) {
-  top: 0px;
-  left: -200px;
-  width: 800px;
-  height: 1px;
-}
+
 .decoration__tooltip {
   position: absolute;
   top: 0;

@@ -10,12 +10,12 @@ export default function ImageCarousel() {
   ).map((data) => data.default);
 
   return (
-    <div className="centered-section">
+    <section className="centered-section">
       <div className={css["carousel"]}>
         {imageLinks.map((url) => (
-          <img className={css["carousel__image"]} src={url} alt="" />
+          <img className={css["carousel__image"]} src={url} key={url} alt="" />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
