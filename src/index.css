@@ -1,10 +1,12 @@
+@import url("./assets/fonts/jetbrains.css");
+@import url("./assets/fonts/satoshi.css");
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* stolen from tailwind tokens */
+  /* yanked from tailwind tokens */
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
@@ -26,6 +28,8 @@
   --border-radius-base: 10px;
   --border-radius-lg: 40px;
 
+  --bg-color: white;
+
   /* to indicate unstyled text (no text should be red) */
   color: red;
   /* this font weight is fine as the default though */
@@ -33,6 +37,8 @@
 }
 body {
   font-family: Satoshi, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
 }
 h1 {
   font-size: var(--text-5xl);
@@ -53,22 +59,10 @@ button {
   all: unset;
   cursor: pointer;
 }
-
-/* global layout utility */
-main {
+.centered-section {
   --padding: 20px;
   --max-container-width: 1200px;
-  display: grid;
-  gap: var(--padding);
-  grid-template-columns:
-    1fr min(calc(100% - 2 * var(--padding)), var(--max-container-width))
-    1fr;
-  overflow: hidden;
-}
-main > .full-spread {
-  grid-column: 1 / -1;
-}
-main section {
-  grid-column: 2;
-  width: 100%;
+  padding-inline: var(--padding);
+  margin-inline: auto;
+  max-width: var(--max-container-width);
 }

@@ -1,17 +1,84 @@
+.hero-container {
+  overflow: hidden;
+}
 .hero-section {
-  padding: 20svh 0 200px;
+  padding: 10% 0 250px;
   position: relative;
 }
 .hero-background {
   position: absolute;
   left: 50%;
-  bottom: -110px;
+  bottom: -94px;
   z-index: -1;
+  height: 850px;
+  width: auto;
 }
 .title {
   font-weight: 700;
   font-size: var(--text-6xl);
   color: var(--black-900);
+  position: relative;
+  _: "Peeks in inspect element";
+  content: "If you want to build the next generation of production-grade products for CMU students and meet other passionate coders like yourself, we would love to have you!";
+}
+.decoration {
+  position: absolute;
+  z-index: -1;
+  inset: 14px -1px 10px -1px;
+}
+.decoration__line {
+  position: absolute;
+  background-color: var(--black-200);
+}
+.decoration__line:nth-child(1) {
+  right: 0px;
+  top: -200px;
+  width: 1px;
+  height: 400px;
+}
+.decoration__line:nth-child(2) {
+  left: 0px;
+  top: -200px;
+  width: 1px;
+  height: 400px;
+}
+.decoration__line:nth-child(3) {
+  bottom: 0px;
+  left: -200px;
+  width: 800px;
+  height: 1px;
+}
+.decoration__line:nth-child(4) {
+  top: 0px;
+  left: -200px;
+  width: 800px;
+  height: 1px;
+}
+.decoration__tooltip {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: max-content;
+
+  transform: translate(0, calc(-100% - 12px));
+  color: var(--black-300);
+  font-size: var(--text-xs);
+  padding: 6px 16px;
+  border: 1px solid var(--black-200);
+  font-weight: 300;
+  font-family: "JetBrainsMono";
+}
+.decoration__tooltip__arrow {
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+  transform: translate(0, 50%) rotate(-45deg);
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid var(--black-200);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+  background-color: var(--bg-color);
 }
 .subtitle {
   font-weight: 700;
@@ -23,7 +90,7 @@
   margin-top: 10px;
   font-size: var(--text-xl);
   color: var(--black-500);
-  width: 70%;
+  width: 60%;
 }
 .action-buttons {
   margin-top: 40px;
