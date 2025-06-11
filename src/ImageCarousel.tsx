@@ -1,14 +1,9 @@
 import css from "./ImageCarousel.module.css";
+import { getAllImageLinksInAssetDirectory } from "./utils/files";
 
 export default function ImageCarousel() {
-  const imageLinks: string[] = Object.values(
-    import.meta.glob("./assets/carousel/*", {
-      eager: true,
-      query: "url",
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    }) as Record<string, any>
-  ).map((data) => data.default);
-
+  const imageLinks = getAllImageLinksInAssetDirectory("carousel-images");
+  console.log(imageLinks);
   return (
     <section className="centered-section">
       <div className={css["carousel"]}>

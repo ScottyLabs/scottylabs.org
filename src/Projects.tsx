@@ -1,6 +1,7 @@
 import { useState } from "react";
 import css from "./Projects.module.css";
 import { AnimatePresence, motion } from "motion/react";
+import { getAllImageLinksInAssetDirectory } from "./utils/files";
 const featuredProjects = [
   {
     name: "CMU Courses",
@@ -28,6 +29,8 @@ const featuredProjects = [
 
 export default function Projects() {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
+  const designIcons = getAllImageLinksInAssetDirectory("design-app-icons");
+  const codeIcons = getAllImageLinksInAssetDirectory("code-app-icons");
   return (
     <div className="centered-section">
       <div className={css["title-section"]}>
@@ -59,6 +62,34 @@ export default function Projects() {
           We bring to life a variety of tech services geared towards improving
           the CMU campus experience and inspiring the community!˙
         </p>
+        <div>
+          {designIcons.slice(0, 4).map((icon) => (
+            <motion.img
+              drag
+              dragSnapToOrigin
+              className={css["tool-logo-slot"]}
+              src={icon}
+              alt=""
+            />
+          ))}
+          {codeIcons.slice(0, 4).map((icon) => (
+            <motion.img
+              drag
+              dragSnapToOrigin
+              className={css["tool-logo-slot"]}
+              src={icon}
+              alt=""
+            />
+          ))}
+          <div className={css["tool-logo-slot"]} />
+          <div className={css["tool-logo-slot"]} />
+          <div className={css["tool-logo-slot"]} />
+          <div className={css["tool-logo-slot"]} />
+          <div className={css["tool-logo-slot"]} />
+          <div className={css["tool-logo-slot"]} />
+          <div className={css["tool-logo-slot"]} />
+          <div className={css["tool-logo-slot"]} />
+        </div>
       </div>
       <ul className={css["project-tabs"]} role="tablist">
         {featuredProjects.map(({ name, assetFolder }, i) => {
