@@ -36,15 +36,15 @@ export default function Projects() {
         {[
           {
             name: "CMU Courses",
-            img: "./assets/project-icons/cmu-courses.png",
+            img: "cmu-courses.png",
           },
           {
             name: "CMU Eats",
-            img: "./assets/project-icons/cmueats.png",
+            img: "cmueats.png",
           },
           {
             name: "CMU Maps",
-            img: "./assets/project-icons/cmu-maps.png",
+            img: "cmu-maps.png",
           },
         ].map(({ name, img }) => {
           return (
@@ -55,7 +55,9 @@ export default function Projects() {
             >
               <img
                 className={css["tab__image"]}
-                src={new URL(img, import.meta.url).href}
+                src={
+                  new URL(`./assets/project-icons/${img}`, import.meta.url).href
+                }
                 alt=""
               />
               <div className={css["tab__name"]}>{name}</div>

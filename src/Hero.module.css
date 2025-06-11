@@ -3,7 +3,7 @@
   position: relative;
 }
 .hero-section {
-  padding: 10% 0 250px;
+  padding: 10% 0 230px;
   position: relative;
 }
 .hero-background {
@@ -87,7 +87,7 @@
   width: 60%;
 }
 .action-buttons {
-  margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   gap: 20px;
 }
