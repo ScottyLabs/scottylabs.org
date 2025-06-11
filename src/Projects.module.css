@@ -103,9 +103,7 @@
       animation: appear 0.3s;
     }
   }
-  &:focus {
-    border-color: hsl(230, 50%, 70%);
-  }
+
   &:hover {
     background-color: var(--black-50);
     &:active {
@@ -126,7 +124,7 @@
   height: 1.4em;
 }
 .panel-container {
-  height: 500px;
+  height: 550px;
   overflow: hidden;
   margin-top: 55px;
   position: relative;

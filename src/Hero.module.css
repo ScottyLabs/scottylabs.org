@@ -114,4 +114,11 @@
   font-size: var(--text-base);
   border: 1px solid var(--black-300, #b3b3b3);
   border-radius: var(--border-radius-base);
+  transition: 0.15s background-color;
+  &:hover {
+    background-color: var(--black-50);
+    &:active {
+      background-color: var(--black-100);
+    }
+  }
 }

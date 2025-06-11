@@ -4,6 +4,15 @@
   font-size: var(--text-xl);
   padding: 12px 33px;
   border-radius: var(--border-radius-lg);
+  transition: 0.15s transform;
+  will-change: transform;
+  &:hover {
+    transform: scale(1.05);
+    &:active {
+      transform: scale(1);
+    }
+  }
+
 }
 .primary {
   background-color: var(--black-900);

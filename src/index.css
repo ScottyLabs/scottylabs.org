@@ -25,6 +25,8 @@
   --black-500: hsl(0, 0%, 35%);
   --black-900: hsl(0, 0%, 0%);
 
+  --blue-300: hsl(230, 50%, 60%);
+
   --border-radius-base: 10px;
   --border-radius-lg: 40px;
 
@@ -69,6 +71,10 @@ small {
 button {
   all: unset;
   cursor: pointer;
+  &:focus {
+    outline: 1px solid var(--blue-300);
+    outline-offset: 2px;
+  }
 }
 ul,
 li {
