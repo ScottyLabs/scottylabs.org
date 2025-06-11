@@ -5,6 +5,7 @@
   gap: 25px;
   overflow-x: scroll;
   align-items: stretch;
+  padding-bottom: 20px;
 }
 .carousel__image {
   border-radius: var(--border-radius-base);
