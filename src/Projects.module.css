@@ -16,6 +16,7 @@
   position: absolute;
   --icon-size: 55px;
   cursor: grab;
+  will-change: transform;
   &:active {
     cursor: grabbing;
   }
@@ -64,6 +65,9 @@
     top: calc(-1 * var(--icon-size) + 30px);
     right: 10px;
     animation-delay: 2s;
+  }
+  &.tool-logo-slot--ai-san:hover {
+    content: url("./assets/ai-san.png");
   }
 }
 @keyframes bob {

@@ -2,6 +2,7 @@ import { useState } from "react";
 import css from "./Projects.module.css";
 import { AnimatePresence, motion } from "motion/react";
 import { getAllImageLinksInAssetDirectory } from "./utils/files";
+import clsx from "clsx";
 const featuredProjects = [
   {
     name: "CMU Courses",
@@ -67,7 +68,10 @@ export default function Projects() {
             <motion.img
               drag
               dragSnapToOrigin
-              className={css["tool-logo-slot"]}
+              className={clsx(
+                css["tool-logo-slot"],
+                icon.includes("/design/ai") && css["tool-logo-slot--ai-san"]
+              )}
               src={icon}
               alt=""
             />
