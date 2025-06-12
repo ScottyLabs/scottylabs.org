@@ -7,7 +7,7 @@ export default function TartanHacks() {
   const pics = getAllImageLinksInAssetDirectory("tartanhacks-photos");
 
   return (
-    <div className={css["main-container"]}>
+    <section className={css["main-container"]}>
       <div className="centered-section">
         <h1 className={css["header"]}>
           We host Pittsburgh's largest annual hackathon,
@@ -28,6 +28,6 @@ export default function TartanHacks() {
           className={css["all-events-button"]}
         />
       </div>
-    </div>
+    </section>
   );
 }

@@ -214,7 +214,7 @@
   width: 100%;
   box-sizing: border-box;
   object-fit: cover;
-  object-position: top left;
+  object-position: top;
   transition: 0.1s padding ease-out;
   cursor: pointer;
   &:hover,

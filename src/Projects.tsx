@@ -33,7 +33,7 @@ export default function Projects() {
   const designIcons = getAllImageLinksInAssetDirectory("design-app-icons");
   const codeIcons = getAllImageLinksInAssetDirectory("code-app-icons");
   return (
-    <div className="centered-section">
+    <section className="centered-section">
       <div className={css["title-section"]}>
         <h1 className={css["title-section__header"]}>
           From{" "}
@@ -158,6 +158,6 @@ export default function Projects() {
           </motion.div>
         </AnimatePresence>
       </div>
-    </div>
+    </section>
   );
 }
