@@ -206,18 +206,24 @@
   overflow: hidden;
   border-radius: var(--border-radius-base);
   border: 1px solid var(--black-300);
-  padding: 40px 55px 0;
 }
 
 .panel__img {
-  height: calc(100% + 10px);
+  padding: 40px 55px 0;
+  height: 100%;
   width: 100%;
+  box-sizing: border-box;
   object-fit: cover;
   object-position: top left;
-  transition: 0.1s transform ease-out;
+  transition: 0.1s padding ease-out;
   cursor: pointer;
-  &:hover {
-    transform: translate(0, -10px);
+  &:hover,
+  a:focus > & {
+    padding-top: 30px;
+  }
+  a:focus > & {
+    outline: 1px solid var(--blue-300);
+    outline-offset: -20px;
   }
 }
 .panel__footer {

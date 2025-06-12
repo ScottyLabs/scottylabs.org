@@ -70,7 +70,7 @@ export default function Projects() {
               dragSnapToOrigin
               className={clsx(
                 css["tool-logo-slot"],
-                icon.includes("/design/ai") && css["tool-logo-slot--ai-san"]
+                icon.includes("/ai") && css["tool-logo-slot--ai-san"]
               )}
               src={icon}
               alt=""
@@ -140,7 +140,6 @@ export default function Projects() {
             <a
               href={featuredProjects[selectedProjectIndex].link}
               target="_blank"
-              tabIndex={-1} // prevent this element from being tabbed to and messing up the layout
             >
               <img
                 className={css["panel__img"]}
