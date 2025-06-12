@@ -2,6 +2,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import ImageCarousel from "./ImageCarousel";
 import Projects from "./Projects";
+import TartanHacks from "./TartanHacks";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <ImageCarousel />
         <Projects />
+        <TartanHacks />
       </main>
     </>
   );

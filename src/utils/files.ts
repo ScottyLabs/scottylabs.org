@@ -5,12 +5,16 @@
  * @returns
  */
 export function getAllImageLinksInAssetDirectory(
-  dir: "carousel-images" | "design-app-icons" | "code-app-icons"
+  dir:
+    | "carousel-images"
+    | "design-app-icons"
+    | "code-app-icons"
+    | "tartanhacks-photos"
 ): string[] {
   switch (dir) {
     case "carousel-images":
       return Object.values(
-        import.meta.glob("../assets/carousel/*", {
+        import.meta.glob("../assets/irl/carousel/*", {
           eager: true,
           query: "url",
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -27,6 +31,14 @@ export function getAllImageLinksInAssetDirectory(
     case "code-app-icons":
       return Object.values(
         import.meta.glob("../assets/icons/apps/code/*", {
+          eager: true,
+          query: "url",
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        }) as Record<string, any>
+      ).map((data) => data.default);
+    case "tartanhacks-photos":
+      return Object.values(
+        import.meta.glob("../assets/irl/tartanhacks/*", {
           eager: true,
           query: "url",
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
