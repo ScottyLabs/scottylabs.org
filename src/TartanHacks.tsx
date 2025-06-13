@@ -3,7 +3,7 @@ import css from "./TartanHacks.module.css";
 import tartanhacksLogo from "./assets/tartanhacks-logo.svg";
 import Button from "./components/Button";
 import { getAllImageLinksInAssetDirectory } from "./utils/files";
-import { motion } from "motion/react";
+
 function getRandomLetter(targetChar: string, chanceForTarget: number) {
   if (Math.random() <= chanceForTarget) return targetChar;
   const characters = "abcdefghijklmnopqrstuvwxyz ";
