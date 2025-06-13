@@ -51,7 +51,7 @@ function StatTile() {
           if (curChar !== targetChar) {
             nextWordState += getRandomLetter(
               targetChar,
-              numIterations / 20 - i * 0.05
+              numIterations / 10 - i * 0.05
             );
           } else {
             nextWordState += targetChar;
