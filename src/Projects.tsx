@@ -74,6 +74,7 @@ export default function Projects() {
               )}
               src={icon}
               alt=""
+              key={icon}
             />
           ))}
           {codeIcons.slice(0, 4).map((icon) => (
@@ -83,6 +84,7 @@ export default function Projects() {
               className={css["tool-logo-slot"]}
               src={icon}
               alt=""
+              key={icon}
             />
           ))}
           <div className={css["tool-logo-slot"]} />
@@ -103,6 +105,7 @@ export default function Projects() {
               role="tab"
               aria-selected={i === selectedProjectIndex ? "true" : "false"}
               onClick={() => setSelectedProjectIndex(i)}
+              key={assetFolder}
             >
               <img
                 className={css["tab__image"]}

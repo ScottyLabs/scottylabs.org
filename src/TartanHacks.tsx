@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import css from "./TartanHacks.module.css";
 import tartanhacksLogo from "./assets/tartanhacks-logo.svg";
 import Button from "./components/Button";
 import { getAllImageLinksInAssetDirectory } from "./utils/files";
+import { motion } from "motion/react";
 function getRandomLetter(targetChar: string, chanceForTarget: number) {
   if (Math.random() <= chanceForTarget) return targetChar;
   const characters = "abcdefghijklmnopqrstuvwxyz ";
@@ -24,51 +25,51 @@ function StatTile() {
   const [currentWord, setCurrentWord] = useState(
     alternateNamesForParticipants[wordIndex]
   );
+  const prevWordRef = useRef("");
   useEffect(() => {
     const intervalId = setInterval(() => {
       setWordIndex(
         (index) => (index + 1) % alternateNamesForParticipants.length
       );
-    }, 5000);
+    }, 4000);
     return () => clearInterval(intervalId);
   }, [alternateNamesForParticipants]);
   useEffect(() => {
-    let numIterations = 0;
+    const startTime = +new Date();
     const wordToTransitionTo = alternateNamesForParticipants[wordIndex];
-    let finished = false;
-    const intervalid = setInterval(() => {
-      // React strict mode will call setCurrentWord twice in dev (per call), so it might look like it doesn't really work.
-      setCurrentWord((currentWord) => {
-        let nextWordState = "";
-        for (
-          let i = 0;
-          i < Math.max(currentWord.length, wordToTransitionTo.length);
-          i++
-        ) {
-          const curChar = currentWord[i] || " ";
-          const targetChar = wordToTransitionTo[i] || " ";
+    const prevWord = prevWordRef.current;
 
-          if (curChar !== targetChar) {
-            nextWordState += getRandomLetter(
-              targetChar,
-              numIterations / 10 - i * 0.05
-            );
-          } else {
-            nextWordState += targetChar;
-          }
+    prevWordRef.current = wordToTransitionTo;
+    let finished = false;
+
+    const intervalId = setInterval(() => {
+      const len = Math.max(prevWord.length, wordToTransitionTo.length);
+      const frontierIndex = Math.floor((+new Date() - startTime) / 100);
+      const windowSize = 1;
+      let newWordState = "";
+      for (let i = 0; i < len; i++) {
+        if (i <= frontierIndex - windowSize) {
+          newWordState += wordToTransitionTo[i] || " ";
+        } else if (i <= frontierIndex) {
+          newWordState += getRandomLetter(
+            wordToTransitionTo[i] || " ",
+            wordToTransitionTo[i] === undefined ? 1 : 0
+          ); // if new word is shorter, replace extra characters in randomWindow with ' '
+        } else {
+          newWordState += prevWord[i] || " ";
         }
-        if (nextWordState.trimEnd() === wordToTransitionTo) {
-          finished = true;
-          clearInterval(intervalid);
-        }
-        numIterations++;
-        return nextWordState;
-      });
-    }, 50);
+      }
+
+      setCurrentWord(newWordState);
+      if (newWordState.trimEnd() === wordToTransitionTo) {
+        finished = true;
+        clearInterval(intervalId);
+      }
+    }, 30);
     return () => {
-      if (!finished) clearInterval(intervalid);
+      if (!finished) clearInterval(intervalId);
     };
-  }, [wordIndex, alternateNamesForParticipants]);
+  }, [wordIndex]);
   return (
     <div className={css["photo-gallery__stat-box"]}>
       <div className={css["stat-box__number"]}>700+</div>
@@ -88,7 +89,12 @@ export default function TartanHacks() {
         <img className={css["tartanhacks-logo"]} src={tartanhacksLogo} alt="" />
         <div className={css["photo-gallery"]}>
           {pics.slice(0, 5).map((pic) => (
-            <img className={css["photo-gallery__image"]} src={pic} alt="" />
+            <img
+              className={css["photo-gallery__image"]}
+              src={pic}
+              alt=""
+              key={pic}
+            />
           ))}
           <StatTile />
         </div>

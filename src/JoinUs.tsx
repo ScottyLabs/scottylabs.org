@@ -32,11 +32,11 @@ export default function JoinUs() {
           <div className={css["recurring-section"]}>
             <h2 className={css["recurring-section__header"]}>Recurring</h2>
             {recurringEvents.map((event) => (
-              <div className={css["event"]}>
+              <div className={css["event"]} key={event.name}>
                 <h3 className={css["event__header"]}>{event.name}</h3>
                 <p className={css["event__subheading"]}>{event.time}</p>
                 {event.locations.map(({ department, location }) => (
-                  <p className={css["event__location"]}>
+                  <p className={css["event__location"]} key={department}>
                     <span className={css["event__location__department"]}>
                       {department}{" "}
                     </span>
