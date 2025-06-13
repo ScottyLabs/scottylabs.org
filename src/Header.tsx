@@ -36,27 +36,38 @@ const navLinks = [
 ];
 function Header() {
   return (
-    <header className={css["main-header"]}>
-      <div className={css["logo"]}>
-        <img className={css["logo__img"]} src={scottylabsLogo} />
+    <header className={css["main-header-container"]}>
+      <div className={css["main-header-layout"]}>
+        <button
+          className={css["logo"]}
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            })
+          }
+        >
+          <img className={css["logo__img"]} src={scottylabsLogo} />
 
-        <div className={css["logo__text"]}>ScottyLabs</div>
+          <div className={css["logo__text"]}>ScottyLabs</div>
+        </button>
+        <nav className={css["main-nav"]}>
+          {navLinks.map(({ icon, url, text }) => (
+            <a aria-current={url === "/about"} key={url}>
+              <button
+                className={clsx(
+                  css["nav-button"],
+                  url === "/about" && css["nav-button--active"]
+                )}
+              >
+                <img className={css["nav-button__icon"]} src={icon} />
+                <div className={css["nav-button__text"]}>{text}</div>
+              </button>
+            </a>
+          ))}
+        </nav>
       </div>
-      <nav className={css["main-nav"]}>
-        {navLinks.map(({ icon, url, text }) => (
-          <a aria-current={url === "/about"} key={url}>
-            <button
-              className={clsx(
-                css["nav-button"],
-                url === "/about" && css["nav-button--active"]
-              )}
-            >
-              <img className={css["nav-button__icon"]} src={icon} />
-              <div className={css["nav-button__text"]}>{text}</div>
-            </button>
-          </a>
-        ))}
-      </nav>
     </header>
   );
 }

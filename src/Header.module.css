@@ -1,9 +1,14 @@
-.main-header {
+.main-header-container {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.809);
+  z-index: 999;
+}
+.main-header-layout {
   max-width: 1400px;
   margin-inline: auto;
   padding: 20px 40px;
-  width: calc(100% - 80px);
-
   display: flex;
 }
 
@@ -45,8 +50,8 @@
 }
 
 .nav-button--active {
-  background-color: var(--black-100);
-  border-color: var(--black-200);
+  background-color: var(--black-50);
+  border-color: var(--black-300);
 }
 .nav-button__icon {
   height: 1.1em;
