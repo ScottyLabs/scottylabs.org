@@ -57,7 +57,7 @@
   padding-inline: 80px;
   display: grid;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 30px;
   grid-template-columns: auto auto;
 }
@@ -68,8 +68,10 @@
 }
 .stat-box__description {
   color: var(--black-50);
-  font-size: var(--text-6xl);
+  font-size: var(--text-4xl);
   font-weight: 700;
+  font-family: "JetBrainsMono";
+  text-wrap: nowrap;
 }
 .all-events-button {
   margin: 50px auto 0;

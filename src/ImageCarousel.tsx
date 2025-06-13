@@ -3,7 +3,7 @@ import { getAllImageLinksInAssetDirectory } from "./utils/files";
 
 export default function ImageCarousel() {
   const imageLinks = getAllImageLinksInAssetDirectory("carousel-images");
-  console.log(imageLinks);
+
   return (
     <section className="centered-section">
       <div className={css["carousel"]}>
