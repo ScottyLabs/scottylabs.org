@@ -218,11 +218,11 @@
   transition: 0.1s padding ease-out;
   cursor: pointer;
   &:hover,
-  a:focus > & {
+  a:focus-visible > & {
     padding-top: 30px;
   }
-  a:focus > & {
-    outline: 1px solid var(--blue-300);
+  a:focus-visible > & {
+    outline: 2px solid var(--blue-300);
     outline-offset: -20px;
   }
 }
