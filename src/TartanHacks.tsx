@@ -16,6 +16,7 @@ function getRandomLetter(targetChar: string, chanceForTarget: number) {
 const alternateNamesForParticipants = [
   "boba recipients",
   "midnight snackers",
+  "morning yogis",
   "hackers",
 ];
 function StatTile() {
