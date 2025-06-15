@@ -1,6 +1,6 @@
 .carousel {
   height: 300px;
-  margin-top: 35px;
+  margin-top: -35px;
   display: flex;
   gap: 25px;
   overflow-x: scroll;

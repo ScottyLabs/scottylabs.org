@@ -1,6 +1,7 @@
 .hero-container {
   overflow: hidden;
   position: relative;
+  height: 100vh;
 }
 .hero-section {
   padding: 10% 0 230px;
@@ -9,9 +10,9 @@
 .hero-background {
   position: absolute;
   left: 50%;
-  bottom: -104px;
+  top: 0px;
   z-index: -1;
-  height: 850px;
+  height: 100vh;
   width: auto;
 }
 .title {
@@ -94,7 +95,7 @@
 
 .events-container {
   position: absolute;
-  bottom: 0;
+  bottom: 110px;
   left: 0;
   right: 0;
   padding: 15px 0;
