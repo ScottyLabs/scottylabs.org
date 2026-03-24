@@ -136,7 +136,6 @@ import VinayVemuriImg from "../../assets/team-page/VinayVemuri.jpg";
 import KellieMedlinImg from "../../assets/team-page/KellieMedlin.jpg";
 import VincentLoImg from "../../assets/team-page/VincentLo.png";
 import ciciImg from "../../assets/team-page/cici.png";
-import LiYingImg from "../../assets/team-page/LiYing.jpg";
 // Type definitions
 export type Person = {
   name: string;
@@ -255,8 +254,8 @@ export const YEARS: YearType[] = [
         {
           name: "Li Ying",
           role: "CMU Courses Tech Lead",
-          image: LiYingImg,
-          url: "https://www.linkedin.com/in/li-ying-9a5667357/",
+          image: ScottyDogImg,
+          url: "https://www.linkedin.com/in/xavilien/",
         },
         {
           name: "Laasya Aki",
