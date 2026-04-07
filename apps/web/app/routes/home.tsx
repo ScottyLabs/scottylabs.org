@@ -1,4 +1,5 @@
 import Hero from "../sections/home/Hero";
+import CollegeCartBanner from "../components/CollegeCartBanner";
 import ImageCarousel from "../components/ImageCarousel";
 import JoinUs from "../sections/home/JoinUs";
 import Projects from "../sections/home/Projects";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <CollegeCartBanner />
       <ImageCarousel
         heightPx={300}
         speedPxPerSecond={-50}

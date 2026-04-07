@@ -1,0 +1,61 @@
+.banner {
+  background-color: #2f167a;
+  color: white;
+  padding: 20px 0;
+}
+.banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+.logo-text {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: white;
+}
+.message {
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+.cta {
+  flex-shrink: 0;
+  padding: 10px 24px;
+  background-color: white;
+  color: #2f167a;
+  font-weight: 700;
+  font-size: var(--text-base);
+  border-radius: var(--border-radius-base);
+  transition:
+    0.15s background-color,
+    0.15s transform;
+  cursor: pointer;
+}
+.cta:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.03);
+}
+.cta:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .banner-inner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
