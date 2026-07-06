@@ -1,5 +1,111 @@
 [
   {
+    "slug": "bus-sign",
+    "name": "Bus Sign",
+    "description": "A real-time bus sign for the Cohon University Center at Carnegie Mellon University",
+    "url": "https://bus-sign.scottylabs.org",
+    "leads": [
+      "tentype",
+      "maybe-yiyi"
+    ],
+    "members": [
+      "gostmeaper",
+      "xboxbedrock",
+      "pandaaured",
+      "zeyuyaoy",
+      "stationedk-06"
+    ],
+    "repos": [
+      "bus-sign"
+    ]
+  },
+  {
+    "slug": "discord-verify",
+    "name": "Discord Verify",
+    "description": "Discord verification for CMU",
+    "url": "https://verify.scottylabs.org",
+    "leads": [
+      "tentype",
+      "maybe-yiyi"
+    ],
+    "members": [
+      "gostmeaper",
+      "xboxbedrock",
+      "pandaaured",
+      "zeyuyaoy",
+      "stationedk-06"
+    ],
+    "repos": [
+      "discord-verify"
+    ]
+  },
+  {
+    "slug": "courses",
+    "name": "CMU Courses",
+    "description": "Course search and scheduling for Carnegie Mellon students",
+    "url": "https://cmu.courses",
+    "leads": [
+      "anish"
+    ],
+    "members": [],
+    "repos": [
+      "courses"
+    ]
+  },
+  {
+    "slug": "cmu-housing",
+    "name": "CMU Housing",
+    "description": "Helping students discover housing options at CMU",
+    "url": "https://cmu.homes",
+    "leads": [
+      "gostmeaper",
+      "ecstaticpilot",
+      "tentype"
+    ],
+    "members": [
+      "amzoeee",
+      "manrajs",
+      "jessica-lr-song",
+      "calpha",
+      "xboxbedrock"
+    ],
+    "repos": [
+      "housing"
+    ]
+  },
+  {
+    "slug": "observability",
+    "name": "Observability",
+    "description": "Grafana dashboards and alert rules for ScottyLabs services",
+    "url": "https://grafana.scottylabs.org",
+    "leads": [
+      "anish",
+      "thesuperrl"
+    ],
+    "members": [
+      "xboxbedrock"
+    ],
+    "repos": [
+      "observability"
+    ]
+  },
+  {
+    "slug": "documentation",
+    "name": "Documentation",
+    "description": "Centralized documentation hub for ScottyLabs projects",
+    "url": "https://docs.scottylabs.org",
+    "leads": [
+      "anish",
+      "thesuperrl"
+    ],
+    "members": [
+      "xboxbedrock"
+    ],
+    "repos": [
+      "documentation"
+    ]
+  },
+  {
     "slug": "link-shortener",
     "name": "Link Shortener",
     "description": "ScottyLabs link shortener service",
@@ -13,6 +119,102 @@
     ],
     "repos": [
       "link-shortener"
+    ]
+  },
+  {
+    "slug": "quest",
+    "name": "Quest",
+    "description": "First-year orientation scavenger hunt",
+    "url": "https://cmu.quest",
+    "leads": [
+      "anish"
+    ],
+    "members": [],
+    "repos": [
+      "quest"
+    ]
+  },
+  {
+    "slug": "cmugpt-surface",
+    "name": "CMU GPT Surface",
+    "description": "Web interface for CMU GPT",
+    "url": "https://cmugpt.com",
+    "leads": [
+      "krishsaxena"
+    ],
+    "members": [
+      "jc-965",
+      "kath45823",
+      "jiya2301",
+      "enkrypt7",
+      "sayevikk",
+      "zeyuyaoy",
+      "xboxbedrock"
+    ],
+    "repos": [
+      "cmugpt-surface"
+    ]
+  },
+  {
+    "slug": "tartan-vote",
+    "name": "Tartan Vote",
+    "description": "Voting app for the Undergraduate Senate and other student orgs",
+    "url": "https://tartan.vote",
+    "leads": [
+      "maybe-yiyi"
+    ],
+    "members": [
+      "vloh",
+      "xboxbedrock",
+      "tentype",
+      "riztofu",
+      "zeyuyaoy",
+      "stationedk-06"
+    ],
+    "repos": [
+      "tartan-vote"
+    ]
+  },
+  {
+    "slug": "terrier",
+    "name": "Terrier",
+    "description": "Open-source hackathon management platform for universities and organizations",
+    "url": "https://terrier.build",
+    "leads": [
+      "kritdass",
+      "anish"
+    ],
+    "members": [],
+    "repos": [
+      "terrier"
+    ]
+  },
+  {
+    "slug": "components",
+    "name": "Components",
+    "description": "ScottyLabs design system",
+    "url": "https://components.scottylabs.org",
+    "leads": [
+      "anish",
+      "jessiter"
+    ],
+    "members": [],
+    "repos": [
+      "components"
+    ]
+  },
+  {
+    "slug": "scottylabs-org",
+    "name": "ScottyLabs Website",
+    "description": "ScottyLabs website",
+    "url": "https://scottylabs.org",
+    "leads": [
+      "anish",
+      "jessiter"
+    ],
+    "members": [],
+    "repos": [
+      "scottylabs-org"
     ]
   }
 ]
