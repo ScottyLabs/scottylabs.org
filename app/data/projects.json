@@ -84,7 +84,8 @@
       "thesuperrl"
     ],
     "members": [
-      "xboxbedrock"
+      "xboxbedrock",
+      "stationedk-06"
     ],
     "repos": [
       "observability"
@@ -100,7 +101,8 @@
       "thesuperrl"
     ],
     "members": [
-      "xboxbedrock"
+      "xboxbedrock",
+      "stationedk-06"
     ],
     "repos": [
       "documentation"
@@ -116,7 +118,8 @@
       "thesuperrl"
     ],
     "members": [
-      "xboxbedrock"
+      "xboxbedrock",
+      "stationedk-06"
     ],
     "repos": [
       "link-shortener"
