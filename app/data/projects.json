@@ -75,6 +75,21 @@
     ]
   },
   {
+    "slug": "maps",
+    "name": "CMU Maps",
+    "description": "Room-level, real-time navigation of Carnegie Mellon's campus",
+    "url": "https://cmumaps.com",
+    "leads": [
+      "krishsaxena",
+      "anish",
+      "xboxbedrock"
+    ],
+    "members": [],
+    "repos": [
+      "maps"
+    ]
+  },
+  {
     "slug": "observability",
     "name": "Observability",
     "description": "Grafana dashboards and alert rules for ScottyLabs services",
