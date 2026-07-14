@@ -154,6 +154,20 @@
     ]
   },
   {
+    "slug": "lost",
+    "name": "Lost and Found",
+    "description": "Official Carnegie Mellon University platform for reporting, managing, and finding lost items",
+    "url": "https://lostandfound.andrew.cmu.edu/",
+    "leads": [
+      "leonliu368"
+    ],
+    "members": [],
+    "repos": [
+      "lost-and-found",
+      "lost-and-found-v2"
+    ]
+  },
+  {
     "slug": "quest",
     "name": "Quest",
     "description": "First-year orientation scavenger hunt",
