@@ -90,6 +90,19 @@
     ]
   },
   {
+    "slug": "cal",
+    "name": "CMU Cal",
+    "description": "A unified web calendar for all CMU academic events",
+    "url": "https://cmucal.com",
+    "leads": [
+      "jalenluorion"
+    ],
+    "members": [],
+    "repos": [
+      "cal"
+    ]
+  },
+  {
     "slug": "observability",
     "name": "Observability",
     "description": "Grafana dashboards and alert rules for ScottyLabs services",
