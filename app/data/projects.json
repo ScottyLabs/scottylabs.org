@@ -44,6 +44,19 @@
     ]
   },
   {
+    "slug": "cal",
+    "name": "CMU Cal",
+    "description": "A unified web calendar for all CMU academic events",
+    "url": "https://cmucal.com",
+    "leads": [
+      "jalenluorion"
+    ],
+    "members": [],
+    "repos": [
+      "cal"
+    ]
+  },
+  {
     "slug": "courses",
     "name": "CMU Courses",
     "description": "Course search and scheduling for Carnegie Mellon students",
@@ -61,7 +74,7 @@
     "slug": "cmu-housing",
     "name": "CMU Housing",
     "description": "Helping students discover housing options at CMU",
-    "url": "https://cmu.homes",
+    "url": "https://cmuhousing.com",
     "leads": [
       "gostmeaper",
       "ecstaticpilot",
@@ -93,19 +106,6 @@
     "members": [],
     "repos": [
       "maps"
-    ]
-  },
-  {
-    "slug": "cal",
-    "name": "CMU Cal",
-    "description": "A unified web calendar for all CMU academic events",
-    "url": "https://cmucal.com",
-    "leads": [
-      "jalenluorion"
-    ],
-    "members": [],
-    "repos": [
-      "cal"
     ]
   },
   {
