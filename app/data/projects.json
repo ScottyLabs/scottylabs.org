@@ -71,7 +71,7 @@
     ]
   },
   {
-    "slug": "cmu-housing",
+    "slug": "housing",
     "name": "CMU Housing",
     "description": "Helping students discover housing options at CMU",
     "url": "https://cmuhousing.com",
@@ -160,7 +160,7 @@
     ]
   },
   {
-    "slug": "lost",
+    "slug": "lost-and-found",
     "name": "Lost and Found",
     "description": "Official Carnegie Mellon University platform for reporting, managing, and finding lost items",
     "url": "https://lostandfound.andrew.cmu.edu/",
@@ -169,8 +169,7 @@
     ],
     "members": [],
     "repos": [
-      "lost-and-found",
-      "lost-and-found-v2"
+      "lost-and-found"
     ]
   },
   {
