@@ -109,23 +109,6 @@
     ]
   },
   {
-    "slug": "observability",
-    "name": "Observability",
-    "description": "Grafana dashboards and alert rules for ScottyLabs services",
-    "url": "https://grafana.scottylabs.org",
-    "leads": [
-      "anish",
-      "thesuperrl"
-    ],
-    "members": [
-      "xboxbedrock",
-      "stationedk-06"
-    ],
-    "repos": [
-      "observability"
-    ]
-  },
-  {
     "slug": "documentation",
     "name": "Documentation",
     "description": "Centralized documentation hub for ScottyLabs projects",
