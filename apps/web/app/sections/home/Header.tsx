@@ -13,11 +13,6 @@ const navLinks = [
     url: "/projects",
     text: "Projects",
   },
-  // {
-  //   icon: eventsIcon,
-  //   url: "/events",
-  //   text: "Events",
-  // },
   {
     icon: teamIcon,
     url: "/team",
@@ -63,6 +58,13 @@ function Header() {
               <div className={css["nav-button__text"]}>{text}</div>
             </NavLink>
           ))}
+          <a
+            className={css["events-button"]}
+            href="https://invite.scottylabs.org"
+          >
+            <img className={css["events-button__icon"]} src={eventsIcon} />
+            <div>Events</div>
+          </a>
         </nav>
       </div>
     </header>
