@@ -59,11 +59,11 @@ function Header() {
             </NavLink>
           ))}
           <a
-            className={css["events-button"]}
+            className={css["invites-button"]}
             href="https://invite.scottylabs.org"
           >
-            <img className={css["events-button__icon"]} src={eventsIcon} />
-            <div>Events</div>
+            <img className={css["invites-button__icon"]} src={eventsIcon} />
+            <div>Invites</div>
           </a>
         </nav>
       </div>
