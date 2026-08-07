@@ -2,7 +2,7 @@ import SponsorsSection from "../components/SponsorSection";
 import css from "./sponsors.module.css";
 export default function Sponsors() {
   const sponsorPacketURL =
-    "https://bucket.minio.scottylabs.org/scottylabs.org/ScottyLabs_Sponsorship_Packet.pdf";
+    "https://assets.scottylabs.org/legal/sponsorship-packet-2627.pdf";
 
   return (
     <section className={"centered-section"}>
