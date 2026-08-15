@@ -37,14 +37,14 @@ function Hero() {
           </div>
 
           <div className={css["action-buttons"]}>
-            <Link to={"/projects"} prefetch="viewport">
-              <Button label="View Projects" variant="primary" />
-            </Link>
             <Link
               to={"https://tartanconnect.cmu.edu/scottylabs/club_signup"}
               target="_blank"
             >
-              <Button label="Join Us" variant="outlined" />
+              <Button label="Join Us for 2026 Recruitment" variant="primary" />
+            </Link>
+            <Link to={"/projects"} prefetch="viewport">
+              <Button label="View Projects" variant="outlined" />
             </Link>
           </div>
 
