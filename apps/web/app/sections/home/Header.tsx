@@ -6,6 +6,7 @@ import teamIcon from "../../assets/icons/team.svg";
 import projectsIcon from "../../assets/icons/projects.svg";
 import eventsIcon from "../../assets/icons/events.svg";
 import sponsorsIcon from "../../assets/icons/sponsors.svg";
+import commitIcon from "../../assets/icons/commit.svg";
 import { NavLink, useLocation } from "react-router";
 const navLinks = [
   {
@@ -63,6 +64,10 @@ function Header() {
               <div className={css["nav-button__text"]}>{text}</div>
             </NavLink>
           ))}
+          <a className={css["nav-button"]} href="https://committees.scottylabs.org">
+            <img className={css["nav-button__icon"]} src={commitIcon} />
+            <div className={css["nav-button__text"]}>Committees</div>
+          </a>
         </nav>
       </div>
     </header>
