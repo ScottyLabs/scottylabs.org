@@ -55,3 +55,49 @@
 .nav-button__icon {
   height: 1.1em;
 }
+
+/* CTA to ScottyLabs Invites (invite.scottylabs.org) — labeled "Invites" to
+   avoid confusion with the Events committee; mirrors the primary Button
+   tokens (black-900, lg radius, scale hover) at header scale. */
+.invites-button {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--black-50);
+  background-color: var(--black-900);
+  border-radius: var(--border-radius-lg);
+  transition: 0.15s transform;
+  will-change: transform;
+
+  &:hover {
+    transform: scale(1.05);
+    &:active {
+      transform: scale(1.02);
+    }
+  }
+}
+.invites-button__icon {
+  height: 1.1em;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 560px) {
+  .main-header-layout {
+    padding: 14px 16px;
+  }
+  .nav-button,
+  .invites-button {
+    padding-inline: 10px;
+  }
+  .invites-button {
+    margin-left: 4px;
+  }
+  .nav-button__icon,
+  .invites-button__icon {
+    display: none;
+  }
+}
