@@ -38,14 +38,22 @@ function Hero() {
 
           <div className={css["action-buttons"]}>
             <Link
-              to={"https://tartanconnect.cmu.edu/scottylabs/club_signup"}
+              to={
+                "https://docs.google.com/forms/d/e/1FAIpQLSeO0p_cphDFP8eM9cVYy_cOWWqtJbhMCc7RIPJfHL0vWSV6mA/viewform"
+              }
               target="_blank"
             >
               <Button label="Join Us for 2026 Recruitment" variant="primary" />
             </Link>
-            <Link to={"/projects"} prefetch="viewport">
-              <Button label="View Projects" variant="outlined" />
+            <Link
+              to={"https://tartanconnect.cmu.edu/scottylabs/club_signup"}
+              target="_blank"
+            >
+              <Button label="Club Signup" variant="outlined" />
             </Link>
+            {/* <Link to={"/projects"} prefetch="viewport">
+              <Button label="View Projects" variant="outlined" />
+            </Link> */}
           </div>
 
           <link rel="preload" href={heroBg} as="image" />
